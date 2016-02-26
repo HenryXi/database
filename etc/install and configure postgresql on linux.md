@@ -124,6 +124,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
     psql -U postgres
     ```
     **Enable remote login**
+
     edit ``pg_hba.conf`` again, change as following(change ``192.168.1.8`` to your IP address, and
     change Authentication to md5)
     ```
