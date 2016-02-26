@@ -47,8 +47,11 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
             exclude=postgresql*
         ```
         On Fedora: /etc/yum.repos.d/fedora.repo and /etc/yum.repos.d/fedora-updates.repo, [fedora] sections
+
         On CentOS: /etc/yum.repos.d/CentOS-Base.repo, [base] and [updates] sections
+
         On Red Hat: /etc/yum/pluginconf.d/rhnplugin.conf [main] section
+
         3. Browse [http://yum.postgresql.org/repopackages.php](http://yum.postgresql.org/repopackages.php) and find correct RPM.
         Here we use 9.4 on CentOS 6 x86.
         ```
