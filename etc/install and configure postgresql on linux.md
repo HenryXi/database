@@ -9,7 +9,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
     * Download RPMs directly from [official website](http://yum.postgresql.org/rpmchart.php)
     and install.(**NOT RECOMMEND**)
         1. choose the version you want to install. For example my environment is
-         CentOS 6 x86, so the right version is [here](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/)
+         CentOS 6 x86, so the right version is [http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/)
         2. click [PostgreSQL Database Server 9.4 PGDG](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/postgresqldbserver94.group.html)
         you will see four RPMs. Download and install them(you have to install them in right order or you will get failure).
         ```
@@ -85,6 +85,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
             yum install postgresql94-server
         ```
 2. Configure PostgreSQL on linux after installing.
+
     Init DB and start service
     ```
         service postgresql-9.4 initdb
