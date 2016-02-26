@@ -43,50 +43,50 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
         ```
         In order to install 9.4 version we have to configure our YUM repository
         2. edit distributions .repo file append a line. That means do not use default Repository download and install PostgreSQL.
-        ```
-            exclude=postgresql*
-        ```
-        On Fedora: /etc/yum.repos.d/fedora.repo and /etc/yum.repos.d/fedora-updates.repo, [fedora] sections
+            ```
+                exclude=postgresql*
+            ```
+            On Fedora: /etc/yum.repos.d/fedora.repo and /etc/yum.repos.d/fedora-updates.repo, [fedora] sections
 
-        On CentOS: /etc/yum.repos.d/CentOS-Base.repo, [base] and [updates] sections
+            On CentOS: /etc/yum.repos.d/CentOS-Base.repo, [base] and [updates] sections
 
-        On Red Hat: /etc/yum/pluginconf.d/rhnplugin.conf [main] section
+            On Red Hat: /etc/yum/pluginconf.d/rhnplugin.conf [main] section
 
         3. Browse [http://yum.postgresql.org/repopackages.php](http://yum.postgresql.org/repopackages.php) and find correct RPM.
-        Here we use 9.4 on CentOS 6 x86.
-        ```
-            yum localinstall https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-6-i386/pgdg-centos94-9.4-2.noarch.rpm
-        ```
-        List available packages again
-        ```
-            yum list 'postgresql*'
-        ```
-        now we have 9.4 version
-        ```
-            postgresql94.i686                       9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-contrib.i686               9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-debuginfo.i686             9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-devel.i686                 9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-docs.i686                  9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-jdbc.i686                  9.3.1101-1PGDG.rhel6              pgdg94
-            postgresql94-jdbc-debuginfo.i686        9.3.1101-1PGDG.rhel6              pgdg94
-            postgresql94-libs.i686                  9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-odbc.i686                  09.03.0400-1PGDG.rhel6            pgdg94
-            postgresql94-odbc-debuginfo.i686        09.03.0400-1PGDG.rhel6            pgdg94
-            postgresql94-plperl.i686                9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-plpython.i686              9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-pltcl.i686                 9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-python.i686                4.1.1-2PGDG.rhel6                 pgdg94
-            postgresql94-python-debuginfo.i686      4.1.1-2PGDG.rhel6                 pgdg94
-            postgresql94-server.i686                9.4.6-1PGDG.rhel6                 pgdg94
-            postgresql94-tcl.i686                   2.1.1-1.rhel6                     pgdg94
-            postgresql94-tcl-debuginfo.i686         2.1.1-1.rhel6                     pgdg94
-            postgresql94-test.i686                  9.4.6-1PGDG.rhel6                 pgdg94
-        ```
+            Here we use 9.4 on CentOS 6 x86.
+            ```
+                yum localinstall https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-6-i386/pgdg-centos94-9.4-2.noarch.rpm
+            ```
+            List available packages again
+            ```
+                yum list 'postgresql*'
+            ```
+            now we have 9.4 version
+            ```
+                postgresql94.i686                       9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-contrib.i686               9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-debuginfo.i686             9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-devel.i686                 9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-docs.i686                  9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-jdbc.i686                  9.3.1101-1PGDG.rhel6              pgdg94
+                postgresql94-jdbc-debuginfo.i686        9.3.1101-1PGDG.rhel6              pgdg94
+                postgresql94-libs.i686                  9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-odbc.i686                  09.03.0400-1PGDG.rhel6            pgdg94
+                postgresql94-odbc-debuginfo.i686        09.03.0400-1PGDG.rhel6            pgdg94
+                postgresql94-plperl.i686                9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-plpython.i686              9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-pltcl.i686                 9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-python.i686                4.1.1-2PGDG.rhel6                 pgdg94
+                postgresql94-python-debuginfo.i686      4.1.1-2PGDG.rhel6                 pgdg94
+                postgresql94-server.i686                9.4.6-1PGDG.rhel6                 pgdg94
+                postgresql94-tcl.i686                   2.1.1-1.rhel6                     pgdg94
+                postgresql94-tcl-debuginfo.i686         2.1.1-1.rhel6                     pgdg94
+                postgresql94-test.i686                  9.4.6-1PGDG.rhel6                 pgdg94
+            ```
         4. use yum command to install it
-        ```
-            yum install postgresql94-server
-        ```
+            ```
+                yum install postgresql94-server
+            ```
 2. Configure PostgreSQL on linux after installing.
 
     Init DB and start service
