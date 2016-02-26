@@ -1,4 +1,4 @@
-# Install and configure postgresql on linux
+# Install and configure PostgreSQL on linux
 
 PostgreSQL, simply "Postgres" for short, is an object-relational database
 management system (ORDBMS). PostgreSQL is able to run on many operating systems
