@@ -28,18 +28,18 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
         1. use ``yum list 'postgresql*'`` to check available version.
         However, unfortunately, there is only one version(8.4) in my environment(CentOS 6 x86).
         ```
-            postgresql.i686                                                           8.4.20-4.el6_7                                                     updates
-            postgresql-contrib.i686                                                   8.4.20-4.el6_7                                                     updates
-            postgresql-devel.i686                                                     8.4.20-4.el6_7                                                     updates
-            postgresql-docs.i686                                                      8.4.20-4.el6_7                                                     updates
-            postgresql-jdbc.noarch                                                    8.4.704-2.el6                                                      base
-            postgresql-libs.i686                                                      8.4.20-4.el6_7                                                     updates
-            postgresql-odbc.i686                                                      08.04.0200-1.el6                                                   base
-            postgresql-plperl.i686                                                    8.4.20-4.el6_7                                                     updates
-            postgresql-plpython.i686                                                  8.4.20-4.el6_7                                                     updates
-            postgresql-pltcl.i686                                                     8.4.20-4.el6_7                                                     updates
-            postgresql-server.i686                                                    8.4.20-4.el6_7                                                     updates
-            postgresql-test.i686                                                      8.4.20-4.el6_7                                                     updates
+            postgresql.i686                     8.4.20-4.el6_7               updates
+            postgresql-contrib.i686             8.4.20-4.el6_7               updates
+            postgresql-devel.i686               8.4.20-4.el6_7               updates
+            postgresql-docs.i686                8.4.20-4.el6_7               updates
+            postgresql-jdbc.noarch              8.4.704-2.el6                base
+            postgresql-libs.i686                8.4.20-4.el6_7               updates
+            postgresql-odbc.i686                08.04.0200-1.el6             base
+            postgresql-plperl.i686              8.4.20-4.el6_7               updates
+            postgresql-plpython.i686            8.4.20-4.el6_7               updates
+            postgresql-pltcl.i686               8.4.20-4.el6_7               updates
+            postgresql-server.i686              8.4.20-4.el6_7               updates
+            postgresql-test.i686                8.4.20-4.el6_7               updates
         ```
         In order to install 9.4 version we have to configure our YUM repository
         2. edit distributions .repo file append a line. That means do not use default Repository download and install PostgreSQL.
@@ -60,25 +60,25 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
         ```
         now we have 9.4 version
         ```
-            postgresql94.i686                                  9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-contrib.i686                          9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-debuginfo.i686                        9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-devel.i686                            9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-docs.i686                             9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-jdbc.i686                             9.3.1101-1PGDG.rhel6                     pgdg94
-            postgresql94-jdbc-debuginfo.i686                   9.3.1101-1PGDG.rhel6                     pgdg94
-            postgresql94-libs.i686                             9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-odbc.i686                             09.03.0400-1PGDG.rhel6                   pgdg94
-            postgresql94-odbc-debuginfo.i686                   09.03.0400-1PGDG.rhel6                   pgdg94
-            postgresql94-plperl.i686                           9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-plpython.i686                         9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-pltcl.i686                            9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-python.i686                           4.1.1-2PGDG.rhel6                        pgdg94
-            postgresql94-python-debuginfo.i686                 4.1.1-2PGDG.rhel6                        pgdg94
-            postgresql94-server.i686                           9.4.6-1PGDG.rhel6                        pgdg94
-            postgresql94-tcl.i686                              2.1.1-1.rhel6                            pgdg94
-            postgresql94-tcl-debuginfo.i686                    2.1.1-1.rhel6                            pgdg94
-            postgresql94-test.i686                             9.4.6-1PGDG.rhel6                        pgdg94
+            postgresql94.i686                       9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-contrib.i686               9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-debuginfo.i686             9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-devel.i686                 9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-docs.i686                  9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-jdbc.i686                  9.3.1101-1PGDG.rhel6              pgdg94
+            postgresql94-jdbc-debuginfo.i686        9.3.1101-1PGDG.rhel6              pgdg94
+            postgresql94-libs.i686                  9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-odbc.i686                  09.03.0400-1PGDG.rhel6            pgdg94
+            postgresql94-odbc-debuginfo.i686        09.03.0400-1PGDG.rhel6            pgdg94
+            postgresql94-plperl.i686                9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-plpython.i686              9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-pltcl.i686                 9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-python.i686                4.1.1-2PGDG.rhel6                 pgdg94
+            postgresql94-python-debuginfo.i686      4.1.1-2PGDG.rhel6                 pgdg94
+            postgresql94-server.i686                9.4.6-1PGDG.rhel6                 pgdg94
+            postgresql94-tcl.i686                   2.1.1-1.rhel6                     pgdg94
+            postgresql94-tcl-debuginfo.i686         2.1.1-1.rhel6                     pgdg94
+            postgresql94-test.i686                  9.4.6-1PGDG.rhel6                 pgdg94
         ```
         4. use yum command to install it
         ```
