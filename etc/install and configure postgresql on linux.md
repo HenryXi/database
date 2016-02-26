@@ -52,8 +52,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
 
             On Red Hat: /etc/yum/pluginconf.d/rhnplugin.conf [main] section
 
-        3. Browse [http://yum.postgresql.org/repopackages.php](http://yum.postgresql.org/repopackages.php) and find correct RPM.
-            Here we use 9.4 on CentOS 6 x86.
+        3. Browse [http://yum.postgresql.org/repopackages.php](http://yum.postgresql.org/repopackages.php) and find correct RPM. Here we use 9.4 on CentOS 6 x86.
             ```
                 yum localinstall https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-6-i386/pgdg-centos94-9.4-2.noarch.rpm
             ```
