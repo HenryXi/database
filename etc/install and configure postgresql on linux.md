@@ -6,10 +6,9 @@ including Linux, FreeBSD, OS X, Solaris, and Microsoft Windows. In this blog I
 will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
 
 1. There are two ways to download and install PostgreSQL.
-    * Download RPMs directly from [official website](http://yum.postgresql.org/rpmchart.php)
-    and install.(**NOT RECOMMEND**)
-        choose the version you want to install. For example my environment is CentOS 6 x86, so the right version is [http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/)
+    * Download RPMs directly from [official website](http://yum.postgresql.org/rpmchart.php) and install.(**NOT RECOMMEND**)
 
+        Choose the version you want to install. For example my environment is CentOS 6 x86, so the right version is [http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/)
         click [PostgreSQL Database Server 9.4 PGDG](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/postgresqldbserver94.group.html)
         you will see four RPMs. Download and install them(you have to install them in right order or you will get failure).
         ```
@@ -24,6 +23,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
             sudo yum localinstall postgresql94-libs-9.4.6-1PGDG.rhel6.i686.rpm postgresql94-9.4.6-1PGDG.rhel6.i686.rpm postgresql94-server-9.4.6-1PGDG.rhel6.i686.rpm postgresql94-contrib-9.4.6-1PGDG.rhel6.i686.rpm
         ```
     * Change your yum Repository use ``yum install`` command to install.
+
         I DO NOT RECOMMEND download RPMs directly and install, because you have to download them one by one and install them in right order.
          Change your yum Repository and use one line command can install PostgreSQL easily.
         use ``yum list 'postgresql*'`` to check available version.
