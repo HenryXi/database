@@ -11,7 +11,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
         Choose the version you want to install. For example my environment is CentOS 6 x86, so the right version is [http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/)
         click [PostgreSQL Database Server 9.4 PGDG](http://yum.postgresql.org/9.4/redhat/rhel-6-i386/repoview/postgresqldbserver94.group.html)
         you will see four RPMs. Download and install them(you have to install them in right order or you will get failure).
-        ```
+        ```bash
         wget http://yum.postgresql.org/9.4/redhat/rhel-6-i386/postgresql94-libs-9.4.6-1PGDG.rhel6.i686.rpm
         wget http://yum.postgresql.org/9.4/redhat/rhel-6-i386/postgresql94-9.4.6-1PGDG.rhel6.i686.rpm
         wget http://yum.postgresql.org/9.4/redhat/rhel-6-i386/postgresql94-server-9.4.6-1PGDG.rhel6.i686.rpm
@@ -19,7 +19,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
 
         ```
         install them
-        ```
+        ```bash
         sudo yum localinstall postgresql94-libs-9.4.6-1PGDG.rhel6.i686.rpm postgresql94-9.4.6-1PGDG.rhel6.i686.rpm postgresql94-server-9.4.6-1PGDG.rhel6.i686.rpm postgresql94-contrib-9.4.6-1PGDG.rhel6.i686.rpm
         ```
     * Change your yum Repository use ``yum install`` command to install.
@@ -28,7 +28,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
          Change your yum Repository and use one line command can install PostgreSQL easily.
         use ``yum list 'postgresql*'`` to check available version.
         However, unfortunately, there is only one version(8.4) in my environment(CentOS 6 x86).
-        ```
+        ```bash
         postgresql.i686                     8.4.20-4.el6_7               updates
         postgresql-contrib.i686             8.4.20-4.el6_7               updates
         postgresql-devel.i686               8.4.20-4.el6_7               updates
@@ -44,7 +44,7 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
         ```
         In order to install 9.4 version we have to configure our YUM repository
         edit distributions .repo file append a line. That means do not use default Repository download and install PostgreSQL.
-        ```
+        ```bash
         exclude=postgresql*
         ```
         On Fedora: /etc/yum.repos.d/fedora.repo and /etc/yum.repos.d/fedora-updates.repo, [fedora] sections
@@ -55,15 +55,15 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
 
         Browse [http://yum.postgresql.org/repopackages.php](http://yum.postgresql.org/repopackages.php) and find correct RPM. Here we use 9.4 on CentOS 6 x86.
 
-        ```
+        ```bash
         yum localinstall https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-6-i386/pgdg-centos94-9.4-2.noarch.rpm
         ```
         List available packages again
-        ```
+        ```bash
         yum list 'postgresql*'
         ```
         now we have 9.4 version
-        ```
+        ```bash
         postgresql94.i686                       9.4.6-1PGDG.rhel6                 pgdg94
         postgresql94-contrib.i686               9.4.6-1PGDG.rhel6                 pgdg94
         postgresql94-debuginfo.i686             9.4.6-1PGDG.rhel6                 pgdg94
@@ -85,13 +85,13 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
         postgresql94-test.i686                  9.4.6-1PGDG.rhel6                 pgdg94
         ```
         use yum command to install it
-        ```
+        ```bash
         yum install postgresql94-server
         ```
 2. Configure PostgreSQL on linux after installing.
 
     Init DB and start service
-    ```
+    ```bash
     service postgresql-9.4 initdb
     service postgresql-9.4 start
     ```
@@ -99,45 +99,45 @@ will show you how to install and configure PostgreSQL on Linux(CentOS 6 x86).
 
     After installing PostgreSQL we can use default user ``postgres`` to login without password.(Current Authentication
     is Peer Authentication, we will change it to Password Authentication later.)
-    ```
+    ```bash
     sudo -u postgres psql template1
     ```
     What we want is Password Authentication, so we set the password for user postgres. Then login out(ctrl+D)
-    ```
+    ```sql
     ALTER USER postgres with encrypted password 'your_password'
     ```
     Now change Authentication to Password Authentication. Edit ``pg_hba.conf``
-    ```
+    ```bash
     vi /var/lib/pgsql/9.4/data/pg_hba.conf
     ```
     change it as following, "md5" means allow user login with password.
-    ```
+    ```ini
     # "local" is for Unix domain socket connections only
     local   all             all                                     md5
     ```
     restart PostgreSQL
-    ```
+    ```bash
     service postgresql-9.4 restart
     ```
     now you can login as postgres with password
-    ```
+    ```bash
     psql -U postgres
     ```
     **Enable remote login**
 
     edit ``pg_hba.conf`` again, change as following(change ``192.168.1.8`` to your IP address, and
     change Authentication to md5)
-    ```
+    ```ini
     # IPv4 local connections:
     host    all             all             127.0.0.1/32            ident
     host    all             all             192.168.1.8/32          md5
     ```
     edit ``postgresql.conf``, change as following.
-    ```
+    ```ini
     listen_addresses ='*'               # what IP address(es) to listen on;
     ```
     restart PostgreSQL
-    ```
+    ```bash
     service postgresql-9.4 restart
     ```
     now you can use PostgreSQL with remote connection.
