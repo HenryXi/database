@@ -12,7 +12,7 @@ CREATE TABLE `test_varchar_table` (
   `name` varchar(40) NOT NULL
 )
 
-INSERT INTO test_varchar_table SET id='8db2efb56a624c2f92e36eb0ee854221', name='Henry';
+INSERT INTO test_varchar_table SET id='8db2efb5-6a62-4c2f-92e3-6eb0ee854221', name='Henry';
 ```
 When you need query this record
 ```sql
