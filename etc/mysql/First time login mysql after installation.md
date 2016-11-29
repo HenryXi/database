@@ -12,14 +12,14 @@ Starting mysqld:                                           [  OK  ]
 **2. Find the temporary password**
 
 ```bash
-[root@virtual ~]# sudo grep 'temporary password' /var/log/mysqld.log
+[root@henry ~]# sudo grep 'temporary password' /var/log/mysqld.log
 2016-11-28T04:59:11.415303Z 1 [Note] A temporary password is generated for root@localhost: N%mSdQFGn6.B
 ```
 
 **3. Login with password**
 
 ```bash
-[root@virtual ~]# mysql -u root -p
+[root@henry ~]# mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 4
