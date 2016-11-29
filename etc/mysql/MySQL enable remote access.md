@@ -31,3 +31,8 @@ Use following command to add rule allow MySQL remote access.
 [root@henry ~]# iptables -I INPUT -p tcp -m tcp --dport 3306 -j ACCEPT
 [root@henry ~]# service iptables save
 ```
+
+**4. Test remote access**
+```bash
+[root@virtual ~]# mysql -u root -p -h <your_IP_address> -P <your_mysql_port>
+```
