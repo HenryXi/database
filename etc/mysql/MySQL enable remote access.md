@@ -10,8 +10,8 @@ Query OK, 1 row affected (0.00 sec)
 
 **2. Grant user access to db**
 
-The SQL below means root can remote access any tables of any databases from any IP. You can change "*.* TO 'root'@'%'"
- to "<database_name>.<table_name> TO '<user_name>'@'<IP_address>'" when necessary.
+The SQL below means root can remote access any tables of any databases from any IP. You can change `*.* TO 'root'@'%'`
+ to `<database_name>.<table_name> TO '<user_name>'@'<IP_address>'` when necessary.
 ```sql
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
 Query OK, 0 rows affected, 1 warning (0.00 sec)
