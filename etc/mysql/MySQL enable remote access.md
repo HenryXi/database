@@ -21,18 +21,18 @@ Query OK, 0 rows affected, 1 warning (0.00 sec)
 
 Use following command to close firewall.
 ```bash
-[root@henry ~]# service iptables stop
+[root@henry ~]$ service iptables stop
 iptables: Setting chains to policy ACCEPT: filter          [  OK  ]
 iptables: Flushing firewall rules:                         [  OK  ]
 iptables: Unloading modules:                               [  OK  ]
 ```
 Use following command to add rule allow MySQL remote access.
 ```bash
-[root@henry ~]# iptables -I INPUT -p tcp -m tcp --dport 3306 -j ACCEPT
-[root@henry ~]# service iptables save
+[root@henry ~]$ iptables -I INPUT -p tcp -m tcp --dport 3306 -j ACCEPT
+[root@henry ~]$ service iptables save
 ```
 
 **4. Test remote access**
 ```bash
-[root@virtual ~]# mysql -u root -p -h <your_IP_address> -P <your_mysql_port>
+[root@virtual ~]$ mysql -u root -p -h <your_IP_address> -P <your_mysql_port>
 ```
