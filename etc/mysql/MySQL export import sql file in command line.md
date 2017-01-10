@@ -1,5 +1,5 @@
 # MySQL export import sql file in command line
-In this page I will show you how to export and import sql file in command line. I assume you have install MySQL in 
+In this page I will show you how to export and import sql file in command line. I assume you have installed MySQL in 
 your environment, the database name is "user_db", the table is "users_tb", the password of this database is "password" and the username is "root".
 
 ## Export data into sql file
