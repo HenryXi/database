@@ -6,11 +6,11 @@ your environment, the database name is "user_db", the table is "users_tb", the p
 
 If you want export all tables in your database use following command.
 ```sql
-$ mysqldump -u root -p users > users.sql
+$ mysqldump -u root -p user_db > users.sql
 ```
 If you want only export a specific table (or tables) you can do like this.
 ```sql
-$ mysqldump -u root -p users_tb > users_tb.sql
+$ mysqldump -u root -p user_db users_tb > users_tb.sql
 ```
 
 ## Import sql file into database 
