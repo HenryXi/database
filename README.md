@@ -13,6 +13,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [mysqldump access denied when doing LOCK TABLES](http://www.henryxi.com/mysqldump-access-denied-when-doing-lock-tables)
 * [Store UUID in MySql](http://www.henryxi.com/store-uuid-in-mysql)
 * [Your password does not satisfy the current policy requirements](http://www.henryxi.com/your-password-does-not-satisfy-the-current-policy-requirements)
+* [MySQL show indexes for table](http://www.henryxi.com/mysql-show-indexes-for-table)
 
 **PostgreSQL**
 
