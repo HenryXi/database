@@ -19,3 +19,4 @@ Common operations for relational database(MySQL & PostgreSQL).
 
 * [Install and configure PostgreSQL on linux](http://www.henryxi.com/install-and-configure-postgresql-on-linux)
 * [PostgreSQL show databases](http://www.henryxi.com/postgresql-show-databases)
+* [PostgreSQL switch database](http://www.henryxi.com/postgresql-switch-database)
