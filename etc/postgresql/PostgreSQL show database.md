@@ -29,3 +29,5 @@ blog=# SELECT datname FROM pg_database WHERE datistemplate = false;
  user
 (2 rows)
 ```
+
+EOF
