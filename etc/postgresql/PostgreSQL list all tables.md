@@ -1,4 +1,4 @@
-# PostgreSQL list tables
+# PostgreSQL list all tables
 Use `\d` or `\d+` in `psql` command to show all tables. `\d+` will show additional detail of tables; 
 ```bash
 blog=$ \d
