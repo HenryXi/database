@@ -22,4 +22,4 @@ blog=$ \d+
 (4 rows) 
 ```
 
-<p style="text-align: center;">-----EOF-----</p>
+<p align="center">-----EOF-----</p>
