@@ -19,7 +19,7 @@ Indexes:
     "lable_lable_name_index" btree (lable_name)
     "lable_update_time_index" btree (update_time)
 
-blog=# \d+ lable
+database=$ \d+ lable
                                                            Table "public.lable"
     Column     |            Type             |                    Modifiers                     | Storage  | Stats target | Description 
 ---------------+-----------------------------+--------------------------------------------------+----------+--------------+-------------
