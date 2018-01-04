@@ -14,6 +14,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [Store UUID in MySql](http://www.henryxi.com/store-uuid-in-mysql)
 * [Your password does not satisfy the current policy requirements](http://www.henryxi.com/your-password-does-not-satisfy-the-current-policy-requirements)
 * [MySQL show indexes for table](http://www.henryxi.com/mysql-show-indexes-for-table)
+* [MySQL create multiple indexes in one sql](http://www.henryxi.com/mysql-create-multiple-indexes-in-one-sql)
 
 **PostgreSQL**
 
