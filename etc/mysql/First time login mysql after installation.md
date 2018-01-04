@@ -35,3 +35,15 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql>
 ```
+
+**4. Change the password**
+```bash
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'rjyWzEz7A3=r66';
+```
+
+**5. Disable validate_password plugin(if needed)**
+```bash
+mysql> uninstall plugin validate_password;
+```
+
+EOF
