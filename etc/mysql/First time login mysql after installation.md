@@ -42,6 +42,9 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'rjyWzEz7A3=r66';
 ```
 
 **5. Disable validate_password plugin(if needed)**
+
+If you want use simple password you can set password policy to low. Use `SET GLOBAL validate_password_policy=LOW;` or
+remove this plugin by following command. 
 ```bash
 mysql> uninstall plugin validate_password;
 ```
