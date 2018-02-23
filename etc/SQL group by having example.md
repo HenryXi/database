@@ -4,16 +4,19 @@ table is the score of course for different students.
 Table name is `score_info`
 ```
 id  name    course      score
-1	A       chinese 	81
-2	A	    math	    75
-3	B	    chinese 	76
-4	B	    math	    90
-5	C   	chinese 	81
-6	C   	math	    100
-7	C   	english	    90
+1   A       chinese     81
+2   A       math        75
+3   B       chinese     76
+4   B       math        90
+5   C       chinese     81
+6   C       math        100
+7   C       english     90
 ```
 `group by name` divides records into several groups by `name` field. There are 3 kinds of name in this table. Execute sql
-`select name from score_info group by name` The output is like following.
+```sql
+select name from score_info group by name
+```
+The output is like following.
 ```
 name
 A
@@ -40,8 +43,8 @@ select name,avg(score) as average from score_info group by name having avg(score
 The output:
 ```
 name    average
-B	    83.0000
-C	    90.3333
+B       83.0000
+C       90.3333
 ```
 
 EOF
