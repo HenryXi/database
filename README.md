@@ -1,6 +1,8 @@
 # Relational Database tutorial
 Common operations for relational database(MySQL & PostgreSQL).
 
+* [SQL group by having example](http://www.henryxi.com/sql-group-by-having-example)
+
 **MySQL**
 
 * [Change character set in MySQL](http://www.henryxi.com/change-character-set-in-mysql)
@@ -15,6 +17,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [Your password does not satisfy the current policy requirements](http://www.henryxi.com/your-password-does-not-satisfy-the-current-policy-requirements)
 * [MySQL show indexes for table](http://www.henryxi.com/mysql-show-indexes-for-table)
 * [MySQL create multiple indexes in one sql](http://www.henryxi.com/mysql-create-multiple-indexes-in-one-sql)
+
 
 **PostgreSQL**
 
