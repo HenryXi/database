@@ -17,6 +17,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [Your password does not satisfy the current policy requirements](http://www.henryxi.com/your-password-does-not-satisfy-the-current-policy-requirements)
 * [MySQL show indexes for table](http://www.henryxi.com/mysql-show-indexes-for-table)
 * [MySQL create multiple indexes in one sql](http://www.henryxi.com/mysql-create-multiple-indexes-in-one-sql)
+* [MySQL show current database](http://www.henryxi.com/mysql-show-current-database)
 
 
 **PostgreSQL**
