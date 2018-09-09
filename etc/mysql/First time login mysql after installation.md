@@ -48,5 +48,6 @@ remove this plugin by following command.
 ```bash
 mysql> uninstall plugin validate_password;
 ```
+**UPDATE** for MySQL 8.0 use `UNINSTALL COMPONENT 'file://component_validate_password';` to remove this plugin.
 
 EOF
