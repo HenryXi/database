@@ -74,3 +74,5 @@ If you install MySQL just for testing. You can remove `validate_password` plugin
 mysql> uninstall plugin validate_password;
 Query OK, 0 rows affected (0.02 sec)
 ```
+
+**UPDATE** for MySQL 8.0 use `UNINSTALL COMPONENT 'file://component_validate_password';` to remove this plugin.
