@@ -27,4 +27,4 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [PostgreSQL switch database](http://www.henryxi.com/postgresql-switch-database)
 * [PostgreSQL list all tables](http://www.henryxi.com/postgresql-list-all-tables)
 * [PostgreSQL desc table](http://www.henryxi.com/postgresql-desc-table)
-* [PostgreSQL display result vertically](http://www.henryxi.com/postgresql-desc-table)
+* [PostgreSQL display result vertically](http://www.henryxi.com/postgresql-display-result-vertically)
