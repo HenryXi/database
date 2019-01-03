@@ -7,6 +7,7 @@ is mounted on `/` and there is no more space for data. I change data directory b
 Stopping mysqld:                                           [  OK  ]
 [root@virtual ~]# mkdir mysql_data
 [root@virtual ~]# mv /var/lib/mysql/ ~/mysql_data/
+[root@virtual ~]# chown -R mysql:mysql mysql_data
 [root@virtual ~]# ln -s ~/mysql_data/mysql /var/lib/
 [root@virtual ~]# service mysqld start
 Starting mysqld:                                           [  OK  ]
