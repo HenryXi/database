@@ -18,7 +18,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [MySQL show indexes for table](http://www.henryxi.com/mysql-show-indexes-for-table)
 * [MySQL create multiple indexes in one sql](http://www.henryxi.com/mysql-create-multiple-indexes-in-one-sql)
 * [MySQL show current database](http://www.henryxi.com/mysql-show-current-database)
-* [MySQL change data directory](http://www.henryxi.com/mysql-show-current-database)
+* [MySQL change data directory](http://www.henryxi.com/mysql-change-data-directory)
 
 
 **PostgreSQL**
