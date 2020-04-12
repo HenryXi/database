@@ -29,3 +29,4 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [PostgreSQL list all tables](http://www.henryxi.com/postgresql-list-all-tables)
 * [PostgreSQL desc table](http://www.henryxi.com/postgresql-desc-table)
 * [PostgreSQL display result vertically](http://www.henryxi.com/postgresql-display-result-vertically)
+* [PostgreSQL dump and restore database](http://www.henryxi.com/postgresql-dump-and-restore-database)
