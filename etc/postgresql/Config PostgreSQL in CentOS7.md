@@ -8,7 +8,7 @@ postgres                   postgresql94-check-db-dir  postgresql94-setup
 [root@my_computer ~]# /usr/pgsql-9.4/bin/postgresql94-setup initdb
 Initializing database ... OK
 [root@my_computer ~]# systemctl start postgresql-9.4
-[root@second_computer ~]# su - postgres
+[root@my_computer ~]# su - postgres
 -bash-4.2$ psql
 psql (9.4.26)
 Type "help" for help.
