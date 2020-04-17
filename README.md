@@ -31,3 +31,4 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [PostgreSQL display result vertically](http://www.henryxi.com/postgresql-display-result-vertically)
 * [PostgreSQL dump and restore database](http://www.henryxi.com/postgresql-dump-and-restore-database)
 * [Config PostgreSQL in CentOS7](http://www.henryxi.com/config-postgresql-in-centos7)
+* [Enable PostgreSQL remote access](http://www.henryxi.com/enable-postgresql-remote-access)
