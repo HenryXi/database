@@ -13,4 +13,7 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
 Query OK, 0 rows affected (0.10 sec)
 ```
 
+Now you can try to log in remotely. It is said on the Internet that the value of `bind_address` in the configuration file 
+needs to be changed. I did not find it here but it does not prevent me from logging in remotely.
+
 EOF
