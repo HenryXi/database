@@ -2,7 +2,7 @@
 Common operations for relational database(MySQL & PostgreSQL).
 
 * [SQL group by having example](http://www.henryxi.com/sql-group-by-having-example)
-* [SQL group by case example](http://www.henryxi.com/sql-group-by-having-example)
+* [SQL group by case example](http://www.henryxi.com/sql-group-by-case-example)
 
 **MySQL**
 
