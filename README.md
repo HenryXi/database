@@ -12,6 +12,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [MySQL delete duplicate rows](http://www.henryxi.com/mysql-delete-duplicate-rows)
 * [MySQL enable remote access](http://www.henryxi.com/mysql-enable-remote-access)
 * [MySQL export data with where condition](http://www.henryxi.com/mysql-export-data-with-where-condition)
+* [ MySQL export data by sql](http://www.henryxi.com/mysql-export-data-with-where-condition)
 * [MySQL export import sql file in command line](http://www.henryxi.com/mysql-export-import-sql-file-in-command-line)
 * [mysqldump access denied when doing LOCK TABLES](http://www.henryxi.com/mysqldump-access-denied-when-doing-lock-tables)
 * [Store UUID in MySql](http://www.henryxi.com/store-uuid-in-mysql)
