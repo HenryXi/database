@@ -1,5 +1,5 @@
 # MySQL export data by sql
-You can export data by using `mysqldump` command. Click [here]() for more detail.
+You can export data by using `mysqldump` command. Click [here](http://www.henryxi.com/mysql-export-data-with-where-condition) for more detail.
 
 Another way to export data is using `mysql` command with `-e` parameter.
 
