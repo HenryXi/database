@@ -22,6 +22,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [MySQL show current database](http://www.henryxi.com/mysql-show-current-database)
 * [MySQL change data directory](http://www.henryxi.com/mysql-change-data-directory)
 * [MySQL 8.0 enable remote access](http://www.henryxi.com/mysql-80-enable-remote-access)
+* [Delete large amounts of data in MySQL](http://www.henryxi.com/delete-large-amounts-of-data-in-mysql)
 
 
 **PostgreSQL**
