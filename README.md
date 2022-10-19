@@ -24,6 +24,7 @@ Common operations for relational database(MySQL & PostgreSQL).
 * [MySQL 8.0 enable remote access](http://www.henryxi.com/mysql-80-enable-remote-access)
 * [Delete large amounts of data in MySQL](http://www.henryxi.com/delete-large-amounts-of-data-in-mysql)
 * [Display table size in MySQL](http://www.henryxi.com/display-table-size-in-mysql)
+* [MySQL show open transaction](http://www.henryxi.com/mysql-show-open-transaction)
 
 
 **PostgreSQL**
